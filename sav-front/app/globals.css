@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+
+body {
+
+  background-color: #FBFBFB
+  /* color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb)); */
+}
+
+
+@layer base {
+  * {
+    @apply border-gray-500;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  h1 {
+    @apply scroll-m-20 text-4xl tracking-tight lg:text-5xl;
+  }
+  h2 {
+    @apply scroll-m-20  pb-2 text-3xl  tracking-tight transition-colors first:mt-0;
+  }
+  h3 {
+    @apply scroll-m-20 text-2xl  tracking-tight;
+  }
+  h4 {
+    @apply scroll-m-20 text-xl  tracking-tight;
+  }
+  h5 {
+    @apply scroll-m-20 text-lg tracking-tight;
+  }
+  h6 {
+    @apply scroll-m-20 text-lg tracking-tight;
+  }
+  p {
+    @apply leading-7 [&:not(:first-child)]:mt-6;
+  }
+}
+
+@layer components {
+ 
+  .component-spacing {
+    @apply max-w-6xl m-auto px-4;
+  }
+  .gen-spacing {
+    @apply mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-8
+  }
+  .parag {
+    @apply mt-4 
+  }
+  .parag-light {
+    @apply mt-4 text-gray-600
+  }
+  .heading2 {
+    @apply text-3xl font-bold sm:text-4xl
+  }
+  .main-heading {
+    @apply py-8;
+  }
+  .component-py {
+    @apply  py-20;
+  }
+
+  .component-mt {
+    @apply  py-20;
+  }
+
+  .transition-ease {
+    @apply transition duration-150 ease-in-out;
+  }
+  
+  .component-margin {
+    @apply mb-10 ;
+  }
+  .btnz{
+    @apply mt-8 inline-block rounded  px-12 py-3 text-sm font-medium text-white transition  focus:outline-none focus:ring focus:ring-accent
+  }
+
+  .btnz2 {
+    @apply rounded-[10px] focus:ring-4 font-medium  px-8 py-2.5 mr-2 mb-2 focus:outline-none  transition duration-150 ease-in-out ;
+  }
+  .btnz-primary {
+    @apply bg-primary-500 focus:ring-primary-300 hover:bg-primary-700;
+  }
+
+  .btnz-secondary {
+    @apply bg-secondary  text-accent focus:ring-accent-300 hover:bg-secondary-100;
+  }
+  .btnz-inverted {
+    @apply bg-transparent border-2 border-accent text-accent focus:ring-accent-300 hover:bg-secondary-700;
+  }
+  .btnz-accent {
+    @apply bg-accent-500 text-background focus:ring-accent-300 hover:bg-accent-700;
+  }
+
+  .btnz-success {
+    @apply bg-success-500 focus:ring-success-300 hover:bg-success-700;
+  }
+
+  .btnz-error {
+    @apply bg-error-500 focus:ring-error-300 hover:bg-error-700;
+  }
+
+
+}
+
+.no-visible-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+}
+ 
+.no-visible-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+

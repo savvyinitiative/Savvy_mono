@@ -1,0 +1,26 @@
+Front end is in sav-Front
+Backend is supabase
+
+
+php artisan serve --port=7078
+
+npx directus start
+
+https://wbdlqzqxgpsvwslznnzr.supabase.co/auth/v1/callback
+
+
+
+
+# Type safety for supabase
+npx supabase login
+npx supabase gen types typescript --project-id wbdlqzqxgpsvwslznnzr > supabase/database.types.ts
+
+# 
+prod_PPTNf0JEo1zxWL
+
+
+
+# Stripe test cards
+4242 4242 4242 4242
+12/34
+

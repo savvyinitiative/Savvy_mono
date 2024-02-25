@@ -1,0 +1,7 @@
+id,created_at,award_name,category,status,slug
+1a40f28e-5b2b-4f6c-af23-df8fd535a48c,2023-12-25 23:02:42.338682+00,COACHING,giza,active,coaching
+bbb9c9a1-4ca4-4a90-950a-af820fe5d636,2023-12-25 23:03:14.220842+00,MANAGEMENT,giza,active,management
+194f8700-bb63-4a25-9e69-11dc1c3b0994,2023-12-25 23:04:19.58053+00,EVENT,giza,active,event
+3efe733f-40f1-4239-ad74-305faaecd1f4,2023-12-25 23:04:49.677706+00,LEADERSHIP AWARD,ubuntu,active,leadership-award
+a82b8f95-e131-46e1-83fd-29005420e7ec,2023-12-25 23:05:13.542615+00,ADVOCACY AWARD,ubuntu,active,advocacy-award
+f60e7a20-8256-427f-8f8e-11e77a12ac2c,2023-12-25 23:05:37.548655+00,PARTNERSHIP,mandela,active,partnership
